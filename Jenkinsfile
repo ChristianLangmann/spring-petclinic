@@ -7,7 +7,7 @@ pipeline {
                   branches: [[name: '*/master']],
                   doGenerateSubmoduleConfigurations: false,
                   extensions: [[$class: 'PathRestriction',
-                                excludedRegions: 'src/test',
+                                excludedRegions: 'src/test/**',
                                 includedRegions: '']],
                   submoduleCfg: [],
                   userRemoteConfigs: [[credentialsId: 'GitHub', url: 'https://github.com/ChristianLangmann/spring-petclinic.git']]])
