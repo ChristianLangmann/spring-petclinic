@@ -3,10 +3,9 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        ls src/
+        sh 'ls src/'
       }
     }
   }
-
 
 }
