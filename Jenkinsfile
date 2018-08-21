@@ -14,7 +14,9 @@ pipeline {
       }
     }
     stage('build') {
-      sh 'ls src/'
+      steps {
+        sh 'ls src/'
+      }
     }
   }
 }
